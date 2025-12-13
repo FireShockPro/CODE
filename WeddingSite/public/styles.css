@@ -1,0 +1,405 @@
+:root {
+  --accent: #7b6cff;
+  --bg: #faf8ff;
+  --text: #222;
+  --hero-bg: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --font-main: 'Georgia', serif;
+  --font-heading: 'Playfair Display', serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  line-height: 1.6;
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.wedding-party-btn, .accommodations-btn, .rsvp-btn {
+  position: fixed;
+  top: 20px;
+  background: #800020;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: var(--font-main);
+  font-size: 1rem;
+  z-index: 10;
+  transition: background 0.3s;
+  width: 160px;
+  text-align: center;
+}
+
+.wedding-party-btn:hover, .accommodations-btn:hover, .rsvp-btn:hover {
+  background: #600018;
+}
+
+.wedding-party-btn {
+  right: 20px;
+}
+
+.accommodations-btn {
+  right: 190px;
+}
+
+.rsvp-btn {
+  right: 360px;
+}
+
+.scroll-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.section-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero {
+  background-image: url('PlaidStare.jpg');
+}
+
+.hero .date {
+  font-size: 1.5rem;
+  margin: 0 0 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.hero h1 {
+  font-family: var(--font-heading);
+  font-size: 5rem;
+  margin: 0 0 20px;
+}
+
+.scroll-arrow {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: white;
+  opacity: 0.5;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  40% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(-5px);
+  }
+}
+
+.accommodations-container .scroll-arrow {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: var(--accent);
+  opacity: 0.5;
+  animation: bounce 2s infinite;
+}
+
+.details-section {
+  background-image: url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=1920&h=1080&fit=crop');
+}
+
+.details-section::before {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.details-section p {
+  font-size: 1.3rem;
+  margin: 15px 0;
+}
+
+.details-section h3 {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  margin: 20px 0 15px;
+  color: white;
+}
+
+.schedule-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.schedule-item .time {
+  width: 100px;
+  text-align: right;
+  margin-right: 10px;
+  font-size: 1.1em;
+  color: #800020;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.schedule-item .event {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.schedule-item::before {
+  content: '';
+  position: absolute;
+  left: 110px;
+  top: 10px;
+  bottom: -10px;
+  width: 4px;
+  background: #800020;
+  border-radius: 2px;
+}
+
+.schedule-item .event p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.directions-btn {
+  display: inline-block;
+  background: #800020;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: var(--font-main);
+  font-size: 0.9rem;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.directions-btn:hover {
+  background: #600018;
+}
+
+.story-section {
+  background-image: url('SunsetFarts.jpg');
+}
+
+.story-section h2 {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.story-section .section-content {
+  padding: 40px 20px;
+}
+
+.story-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.story-text {
+  max-width: 700px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.story-text p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin: 15px 0;
+}
+
+.story-text a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.story-text a:hover {
+  text-decoration: underline;
+}
+
+.story-images {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.story-images img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .details-section h3, .story-section h2 {
+    font-size: 2rem;
+  }
+  .story-images {
+    flex-direction: column;
+  }
+  .story-images img {
+    width: 250px;
+    height: 150px;
+  }
+}
+
+.party-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.party-container h1 {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: var(--accent);
+}
+
+.accommodations-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.accommodations-container h1 {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: var(--accent);
+}
+
+.accommodations-container p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.hotel-block {
+  background: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.hotel-block h2 {
+  font-family: var(--font-heading);
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.hotel-block p {
+  margin: 5px 0;
+}
+
+.hotel-block a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.hotel-block a:hover {
+  text-decoration: underline;
+}
+
+.party-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.party-member {
+  width: calc(33.333% - 20px);
+  min-width: 200px;
+  text-align: center;
+}
+
+.party-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.party-member h3 {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  margin: 10px 0 5px;
+}
+
+.party-member p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+}
+
+.party-member p:last-child {
+  font-size: 0.9rem;
+  color: #888;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .party-member {
+    width: calc(50% - 15px);
+  }
+}

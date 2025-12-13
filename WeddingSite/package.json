@@ -1,0 +1,11 @@
+{
+  "name": "kelby-and-andrew-rsvp",
+  "version": "1.0.0",
+  "description": "RSVP site for Kelby & Andrew",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "MIT"
+}
