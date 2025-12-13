@@ -20,6 +20,13 @@ body {
   overflow-x: hidden;
 }
 
+.accommodations-page {
+  background-image: url('https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=1920&h=1080&fit=crop');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .wedding-party-btn, .accommodations-btn, .rsvp-btn {
   position: fixed;
   top: 20px;
@@ -317,13 +324,17 @@ body {
   margin: 0 auto;
   padding: 40px 20px;
   text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .accommodations-container h1 {
   font-family: var(--font-heading);
   font-size: 3rem;
   margin-bottom: 20px;
-  color: var(--accent);
+  color: #800020;
 }
 
 .accommodations-container p {
@@ -333,7 +344,7 @@ body {
 }
 
 .hotel-block {
-  background: #f9f9f9;
+  background: white;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 8px;
@@ -342,7 +353,7 @@ body {
 
 .hotel-block h2 {
   font-family: var(--font-heading);
-  color: var(--accent);
+  color: #800020;
   margin-bottom: 10px;
 }
 
