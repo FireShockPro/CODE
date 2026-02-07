@@ -28,6 +28,9 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-color: #ddd;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .faq-page {
@@ -37,6 +40,9 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-color: #ddd;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .wedding-party-btn, .accommodations-btn, .rsvp-btn, .faq-btn {
