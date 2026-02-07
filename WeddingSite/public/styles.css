@@ -473,3 +473,293 @@ body {
   margin: 5px 0;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6);
 }
+
+/* Mobile-first responsive design */
+
+/* Mobile devices (up to 480px) */
+@media (max-width: 480px) {
+  .wedding-party-btn, .accommodations-btn, .rsvp-btn, .faq-btn {
+    position: fixed;
+    top: auto;
+    bottom: 10px;
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    font-size: 0.7rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .wedding-party-btn {
+    right: 10px;
+  }
+
+  .accommodations-btn {
+    right: 65px;
+  }
+
+  .rsvp-btn {
+    right: 120px;
+  }
+
+  .faq-btn {
+    right: 175px;
+  }
+
+  .section {
+    height: auto;
+    min-height: 60vh;
+    padding: 20px;
+  }
+
+  .section-content {
+    padding: 20px !important;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem !important;
+  }
+
+  .hero p {
+    font-size: 0.9rem !important;
+  }
+
+  .details-section h3,
+  .story-section h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .details-section p,
+  .story-section p {
+    font-size: 0.9rem !important;
+  }
+
+  .timeline {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding: 15px !important;
+  }
+
+  .accommodations-container,
+  .faq-container {
+    padding: 20px 15px !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .accommodations-container h1,
+  .faq-container h1 {
+    font-size: 2rem !important;
+  }
+
+  .accommodations-container p,
+  .faq-container p,
+  .faq-item p,
+  .hotel-block p {
+    font-size: 0.95rem !important;
+  }
+
+  .hotel-block,
+  .faq-item {
+    padding: 15px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .hotel-block h2,
+  .faq-item h2 {
+    font-size: 1.3rem !important;
+  }
+
+  .party-grid {
+    grid-template-columns: 1fr !important;
+    gap: 15px !important;
+  }
+
+  .party-member {
+    width: 100% !important;
+  }
+
+  .wedding-party-page {
+    padding-top: 20px !important;
+  }
+
+  .story-images {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .story-images img {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+/* Tablets and small devices (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .wedding-party-btn, .accommodations-btn, .rsvp-btn, .faq-btn {
+    position: fixed;
+    width: 140px;
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+
+  .wedding-party-btn {
+    right: 15px;
+  }
+
+  .accommodations-btn {
+    right: 165px;
+  }
+
+  .rsvp-btn {
+    right: 315px;
+  }
+
+  .faq-btn {
+    right: 465px;
+  }
+
+  .section {
+    height: auto;
+    min-height: 70vh;
+    padding: 30px 15px;
+  }
+
+  .section-content {
+    padding: 30px !important;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem !important;
+  }
+
+  .hero p {
+    font-size: 1rem !important;
+  }
+
+  .details-section h3,
+  .story-section h2 {
+    font-size: 1.8rem !important;
+  }
+
+  .details-section p,
+  .story-section p {
+    font-size: 0.95rem !important;
+  }
+
+  .timeline {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .timeline-item {
+    flex: 1;
+    min-width: 150px;
+    padding: 15px !important;
+    font-size: 0.85rem !important;
+  }
+
+  .accommodations-container,
+  .faq-container {
+    padding: 30px 20px !important;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .accommodations-container h1,
+  .faq-container h1 {
+    font-size: 2.5rem !important;
+  }
+
+  .hotel-block,
+  .faq-item {
+    padding: 18px !important;
+  }
+
+  .hotel-block h2,
+  .faq-item h2 {
+    font-size: 1.4rem !important;
+  }
+
+  .party-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px !important;
+  }
+
+  .party-member {
+    width: 100% !important;
+  }
+
+  .story-images {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .story-images img {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+/* Medium devices and desktops (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .wedding-party-btn, .accommodations-btn, .rsvp-btn, .faq-btn {
+    width: 150px;
+    font-size: 0.95rem;
+    padding: 10px 15px;
+  }
+
+  .wedding-party-btn {
+    right: 20px;
+  }
+
+  .accommodations-btn {
+    right: 180px;
+  }
+
+  .rsvp-btn {
+    right: 340px;
+  }
+
+  .faq-btn {
+    right: 500px;
+  }
+
+  .hero h1 {
+    font-size: 3rem !important;
+  }
+
+  .details-section h3,
+  .story-section h2 {
+    font-size: 2rem !important;
+  }
+
+  .party-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  .accommodations-container,
+  .faq-container {
+    max-width: 700px !important;
+  }
+}
+
+/* Large desktops (1025px and up) */
+@media (min-width: 1025px) {
+  .wedding-party-btn, .accommodations-btn, .rsvp-btn, .faq-btn {
+    width: 160px;
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .party-grid {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+}
