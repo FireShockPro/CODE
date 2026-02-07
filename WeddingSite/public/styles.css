@@ -49,10 +49,11 @@ body {
   border-radius: 5px;
   font-family: var(--font-main);
   font-size: 1rem;
-  z-index: 10;
+  z-index: 9999;
   transition: background 0.3s;
   width: 160px;
   text-align: center;
+  display: block;
 }
 
 .wedding-party-btn:hover, .accommodations-btn:hover, .rsvp-btn:hover, .faq-btn:hover {
