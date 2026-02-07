@@ -405,7 +405,7 @@ body {
 }
 
 .party-member {
-  width: calc(33.333% - 20px);
+  width: calc(50% - 20px);
   min-width: 200px;
   text-align: center;
 }
@@ -743,7 +743,7 @@ body {
   }
 
   .party-grid {
-    grid-template-columns: repeat(3, 1fr) !important;
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 
   .accommodations-container,
@@ -761,6 +761,6 @@ body {
   }
 
   .party-grid {
-    grid-template-columns: repeat(4, 1fr) !important;
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 }
