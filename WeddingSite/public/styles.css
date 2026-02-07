@@ -45,6 +45,18 @@ body {
   flex-direction: column;
 }
 
+.wedding-party-page {
+  background-image: url('https://images.unsplash.com/photo-1519741497674-611481863552?w=1920&h=1080&fit=crop');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #ddd;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .wedding-party-btn, .accommodations-btn, .rsvp-btn, .faq-btn {
   position: fixed;
   top: 20px;
@@ -339,7 +351,8 @@ body {
   font-family: var(--font-heading);
   font-size: 3rem;
   margin-bottom: 40px;
-  color: var(--accent);
+  color: #800020;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
 }
 
 .accommodations-container {
