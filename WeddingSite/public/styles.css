@@ -410,14 +410,6 @@ body {
   text-align: center;
 }
 
-.party-member img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 10px;
-}
-
 .party-member h3 {
   font-family: var(--font-heading);
   font-size: 1.2rem;
