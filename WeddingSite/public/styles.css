@@ -85,6 +85,7 @@ body {
 .scroll-container {
   height: 100vh;
   overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 
 .section {
@@ -92,6 +93,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  scroll-snap-align: start;
   position: relative;
   background-size: cover;
   background-position: center;
