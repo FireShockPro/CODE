@@ -485,33 +485,35 @@ body {
 @media (max-width: 480px) {
   .wedding-party-btn, .accommodations-btn, .rsvp-btn, .faq-btn {
     position: fixed;
-    top: auto;
-    bottom: 10px;
-    width: 45px;
-    height: 45px;
-    padding: 0;
-    font-size: 0.7rem;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    top: 20px;
+    width: 140px;
+    height: auto;
+    padding: 8px 10px;
+    font-size: 0.75rem;
+    border-radius: 5px;
+    display: block;
     text-align: center;
+    right: 10px;
   }
 
   .wedding-party-btn {
+    top: 20px;
     right: 10px;
   }
 
   .accommodations-btn {
-    right: 65px;
+    top: 65px;
+    right: 10px;
   }
 
   .rsvp-btn {
-    right: 120px;
+    top: 110px;
+    right: 10px;
   }
 
   .faq-btn {
-    right: 175px;
+    top: 155px;
+    right: 10px;
   }
 
   .section {
