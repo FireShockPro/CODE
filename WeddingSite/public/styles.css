@@ -18,16 +18,28 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
 .accommodations-page {
-  background-image: url('https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=1920&h=1080&fit=crop');
+  background-image: url('https://images.unsplash.com/photo-1578500494198-246f612d03b3?w=1920&h=1080&fit=crop');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #ddd;
 }
 
-.wedding-party-btn, .accommodations-btn, .rsvp-btn {
+.faq-page {
+  background-image: url('https://images.unsplash.com/photo-1578500494198-246f612d03b3?w=1920&h=1080&fit=crop');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #ddd;
+}
+
+.wedding-party-btn, .accommodations-btn, .rsvp-btn, .faq-btn {
   position: fixed;
   top: 20px;
   background: #800020;
@@ -43,7 +55,7 @@ body {
   text-align: center;
 }
 
-.wedding-party-btn:hover, .accommodations-btn:hover, .rsvp-btn:hover {
+.wedding-party-btn:hover, .accommodations-btn:hover, .rsvp-btn:hover, .faq-btn:hover {
   background: #600018;
 }
 
@@ -57,6 +69,10 @@ body {
 
 .rsvp-btn {
   right: 360px;
+}
+
+.faq-btn {
+  right: 530px;
 }
 
 .scroll-container {
@@ -324,7 +340,7 @@ body {
   margin: 0 auto;
   padding: 40px 20px;
   text-align: center;
-  background: rgba(255, 255, 255, 0.9);
+  background: transparent;
   border-radius: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -335,16 +351,18 @@ body {
   font-size: 3rem;
   margin-bottom: 20px;
   color: #800020;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
 }
 
 .accommodations-container p {
   font-size: 1.1rem;
   margin-bottom: 30px;
   line-height: 1.6;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
 }
 
 .hotel-block {
-  background: white;
+  background: rgba(255, 255, 255, 0.8);
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 8px;
@@ -355,10 +373,12 @@ body {
   font-family: var(--font-heading);
   color: #800020;
   margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
 }
 
 .hotel-block p {
   margin: 5px 0;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6);
 }
 
 .hotel-block a {
@@ -413,4 +433,43 @@ body {
   .party-member {
     width: calc(50% - 15px);
   }
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  background: transparent;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.faq-container h1 {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #800020;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+}
+
+.faq-item {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.faq-item h2 {
+  font-family: var(--font-heading);
+  color: #800020;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.faq-item p {
+  margin: 5px 0;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6);
 }
