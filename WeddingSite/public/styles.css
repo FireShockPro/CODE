@@ -54,7 +54,6 @@ body {
   width: 160px;
   text-align: center;
   display: block;
-  border: 2px solid yellow;
 }
 
 .wedding-party-btn:hover, .accommodations-btn:hover, .rsvp-btn:hover, .faq-btn:hover {
