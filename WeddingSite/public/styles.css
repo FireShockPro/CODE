@@ -404,6 +404,28 @@ body {
   gap: 30px;
 }
 
+.party-columns {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.party-column {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.column-title {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: #800020;
+  margin-bottom: 30px;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+}
+
 .party-member {
   width: calc(50% - 20px);
   min-width: 200px;
@@ -587,6 +609,21 @@ body {
     width: 100% !important;
   }
 
+  .party-columns {
+    flex-direction: column;
+    gap: 20px !important;
+  }
+
+  .party-column {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .column-title {
+    font-size: 1.5rem !important;
+    margin-bottom: 20px !important;
+  }
+
   .wedding-party-page {
     padding-top: 20px !important;
   }
@@ -698,6 +735,20 @@ body {
     width: 100% !important;
   }
 
+  .party-columns {
+    gap: 30px !important;
+  }
+
+  .party-column {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+  }
+
+  .column-title {
+    font-size: 1.8rem !important;
+  }
+
   .story-images {
     flex-direction: column;
     gap: 20px;
@@ -744,6 +795,16 @@ body {
 
   .party-grid {
     grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .party-columns {
+    gap: 40px !important;
+  }
+
+  .party-column {
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
   }
 
   .accommodations-container,
