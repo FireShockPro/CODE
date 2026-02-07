@@ -254,7 +254,7 @@ body {
 
 .story-section {
   background-image: url('SunsetFarts.jpg');
-  margin-top: -40px;
+  background-position: center bottom;
 }
 
 .story-section h2 {
