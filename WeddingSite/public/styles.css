@@ -502,8 +502,8 @@ body {
 
 .faq-item {
   background: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  margin-bottom: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
   border-radius: 8px;
   text-align: left;
 }
@@ -511,13 +511,16 @@ body {
 .faq-item h2 {
   font-family: var(--font-heading);
   color: #800020;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
 }
 
 .faq-item p {
-  margin: 5px 0;
+  margin: 0;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6);
+  line-height: 1.8;
+  font-size: 1.05rem;
 }
 
 /* Mobile-first responsive design */
@@ -616,13 +619,14 @@ body {
 
   .hotel-block,
   .faq-item {
-    padding: 15px !important;
-    margin-bottom: 15px !important;
+    padding: 20px !important;
+    margin-bottom: 20px !important;
   }
 
   .hotel-block h2,
   .faq-item h2 {
     font-size: 1.3rem !important;
+    margin-bottom: 15px !important;
   }
 
   .party-grid {
@@ -759,6 +763,7 @@ body {
   .hotel-block h2,
   .faq-item h2 {
     font-size: 1.4rem !important;
+    margin-bottom: 15px !important;
   }
 
   .party-grid {
