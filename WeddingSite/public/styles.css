@@ -34,12 +34,8 @@ body {
 }
 
 .faq-page {
-  background-image: url('https://images.unsplash.com/photo-1578500494198-246f612d03b3?w=1920&h=1080&fit=crop');
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(135deg, #1a1a1a 0%, #800020 50%, #0d0d0d 100%);
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-color: #ddd;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
